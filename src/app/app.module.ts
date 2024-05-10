@@ -25,6 +25,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon'; 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, LoginComponent],
 
@@ -42,7 +45,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatDatepickerModule,
     MatNativeDateModule,
     MatToolbarModule,
+    MatSelectModule,
     MatOptionModule,
+    MatTableModule,
+    MatIconModule,
     PostModule,
     StoreModule.forRoot(appReducers, {
       runtimeChecks: {
