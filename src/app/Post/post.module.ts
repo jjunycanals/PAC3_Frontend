@@ -6,7 +6,13 @@ import { HomeComponent } from './components/home/home.component';
 import { PostFormComponent } from './components/post-form/post-form.component';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     PostsListComponent,
@@ -15,6 +21,16 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     FormatDatePipe,
     DashboardComponent,
   ],
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [
+    CommonModule, 
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatToolbarModule,
+    MatOptionModule,
+  ],
 })
 export class PostModule {}

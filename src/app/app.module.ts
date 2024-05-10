@@ -22,7 +22,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
+import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
@@ -42,6 +42,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatDatepickerModule,
     MatNativeDateModule,
     MatToolbarModule,
+    MatOptionModule,
     PostModule,
     StoreModule.forRoot(appReducers, {
       runtimeChecks: {
