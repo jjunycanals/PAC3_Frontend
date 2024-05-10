@@ -11,6 +11,7 @@ import { CategoryDTO } from '../../models/category.dto';
   styleUrls: ['./categories-list.component.scss'],
 })
 export class CategoriesListComponent {
+  displayedColumns: string[] = ['categoryId', 'title', 'description', 'cssColor', 'actions'];
   categories: CategoryDTO[];
 
   private userId: string;
