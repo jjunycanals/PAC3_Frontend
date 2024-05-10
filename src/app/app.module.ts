@@ -12,7 +12,7 @@ import { appReducers, EffectsArray } from './app.reducers';
 import { AuthModule } from './Auth/auth.module';
 import { CategoryModule } from './Category/category.module';
 import { PostModule } from './Post/post.module';
-import { FooterComponent } from './Shared/Components/footer/footer.component';
+// import { FooterComponent } from './Shared/Components/footer/footer.component';
 import { HeaderComponent } from './Shared/Components/header/header.component';
 import { AuthInterceptorService } from './Shared/Services/auth-interceptor.service';
 import { UserModule } from './User/user.module';
@@ -26,7 +26,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, LoginComponent],
+  declarations: [AppComponent, HeaderComponent, LoginComponent],
 
   imports: [
     BrowserModule,

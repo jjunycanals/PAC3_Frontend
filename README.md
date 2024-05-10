@@ -1,10 +1,12 @@
 # PAC 3
 
 ## Indicacions
+Exercici 1 completat. Login, register, profile, categoriesForm y postsForm amb Angular Material
 
+Exercic 4 fet.
 
 ## Repositori: https://github.com/jjunycanals/PAC3_Frontend.git
-
+## Ordres git: git init git add README.md git commit -m "first commit" git branch -M main git remote add origin https://github.com/ git push -u origin main
 
 # BlogUocProjectFront
 
