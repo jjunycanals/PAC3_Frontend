@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './Auth/components/login.component';
+// import { LoginComponent } from './Auth/components/login.component';
+import { LoginComponent } from './Components/login/login.component';
 import { CategoriesListComponent } from './Category/components/categories-list/categories-list.component';
 import { CategoryFormComponent } from './Category/components/category-form/category-form.component';
 import { DashboardComponent } from './Post/components/dashboard/dashboard.component';
@@ -11,10 +12,11 @@ import { AuthGuard } from './Shared/Guards/auth.guard';
 import { ProfileComponent } from './User/components/profile/profile.component';
 import { RegisterComponent } from './User/components/register/register.component';
 
+
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: LoginComponent,
   },
   {
     path: 'login',

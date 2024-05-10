@@ -16,9 +16,17 @@ import { FooterComponent } from './Shared/Components/footer/footer.component';
 import { HeaderComponent } from './Shared/Components/header/header.component';
 import { AuthInterceptorService } from './Shared/Services/auth-interceptor.service';
 import { UserModule } from './User/user.module';
+import { LoginComponent } from './Components/login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, LoginComponent],
 
   imports: [
     BrowserModule,
@@ -28,6 +36,12 @@ import { UserModule } from './User/user.module';
     AuthModule,
     UserModule,
     CategoryModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatToolbarModule,
     PostModule,
     StoreModule.forRoot(appReducers, {
       runtimeChecks: {
@@ -40,6 +54,7 @@ import { UserModule } from './User/user.module';
       maxAge: 25,
       logOnly: environment.production,
     }),
+    BrowserAnimationsModule,
   ],
   providers: [
     {
