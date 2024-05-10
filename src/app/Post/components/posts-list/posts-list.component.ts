@@ -4,6 +4,10 @@ import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/app.reducers';
 import * as PostsAction from '../../actions';
 import { PostDTO } from '../../models/post.dto';
+import { MatTableDataSource } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
 
 @Component({
   selector: 'app-posts-list',
@@ -12,6 +16,7 @@ import { PostDTO } from '../../models/post.dto';
 })
 export class PostsListComponent {
   posts: PostDTO[];
+  displayedColumns: string[] = ['postId', 'title', 'description', 'num_likes', 'num_dislikes', 'actions'];
   private userId: string;
 
   constructor(private router: Router, private store: Store<AppState>) {

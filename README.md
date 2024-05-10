@@ -1,11 +1,15 @@
 # PAC 3
 
 ## Indicacions
-Exercici 1 completat. Login, register, profile, categoriesForm y postsForm amb Angular Material
+    - Exercici 1 completat. Login, register, profile, categoriesForm y postsForm amb Angular Material
+    - Exercici 2. Categories-list fet.  Posts-list fet. 
+    - Exercici 3. No fet.
+    - Exercici 4 fet. Eliminat footer i afegit toolbar a header.
+    - Exercici 5. No fet.
+    - Exercici 6. fet. Gràfic de barres. Instal·lar npm install @swimlane/ngx-charts --save.
+    - Exercici 7.
 
-Exercici 2. 
 
-Exercic 4 fet. Eliminat footer i afegit toolbar a header.
 
 ## Repositori: https://github.com/jjunycanals/PAC3_Frontend.git
 ## Ordres git: git init git add README.md git commit -m "first commit" git branch -M main git remote add origin https://github.com/ git push -u origin main

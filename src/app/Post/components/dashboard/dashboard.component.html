@@ -1,4 +1,23 @@
+<!-- <div *ngIf="posts">
+  <p>Num likes: {{ numLikes }}</p>
+  <p>Num dislikes: {{ numDislikes }}</p>
+</div> -->
 <div *ngIf="posts">
   <p>Num likes: {{ numLikes }}</p>
   <p>Num dislikes: {{ numDislikes }}</p>
+  
+  <!-- Gráfica de barras -->
+  <ngx-charts-bar-vertical
+    [view]="[400, 300]"
+    [scheme]="colorScheme"
+    [results]="barChartData"
+    [gradient]="false"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="false"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    xAxisLabel="Posts"
+    yAxisLabel="Likes/Dislikes">
+  </ngx-charts-bar-vertical>
 </div>

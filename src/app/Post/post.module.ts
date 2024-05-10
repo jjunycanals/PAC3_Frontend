@@ -12,7 +12,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 @NgModule({
   declarations: [
     PostsListComponent,
@@ -31,6 +34,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatNativeDateModule,
     MatToolbarModule,
     MatOptionModule,
+    MatIconModule,
+    MatTableModule,
+    NgxChartsModule,
   ],
 })
 export class PostModule {}
