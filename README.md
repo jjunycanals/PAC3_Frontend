@@ -3,6 +3,8 @@
 ## Indicacions
 Exercici 1 completat. Login, register, profile, categoriesForm y postsForm amb Angular Material
 
+Exercici 2. 
+
 Exercic 4 fet. Eliminat footer i afegit toolbar a header.
 
 ## Repositori: https://github.com/jjunycanals/PAC3_Frontend.git
